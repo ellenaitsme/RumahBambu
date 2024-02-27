@@ -1,0 +1,306 @@
+* {
+    font-family: "Lato", sans-serif;
+    color: white;
+    margin: 0px;
+}
+
+h2 {
+    font-size: 36px;
+    margin-bottom: 14px;
+}
+
+h3{
+    font-size: 32px;
+    color: #254706;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 7px 98px;
+    background-color: #254706;
+    position:sticky;
+    top:0;
+    z-index: 1000;
+}
+
+nav img {
+    width: 46px;
+    height: 46px;
+}
+
+nav a { 
+    text-decoration: none;
+    margin: 0px 48px;
+}
+
+#banner{
+    background-image: url("/asset/companyBanner.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 45px 98px;
+    display: flex;
+    height: 578px;
+}
+
+#about-company{
+    padding: 22px 41px;
+    background-color: #193102;
+    opacity: 80%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    margin-right: 40%;
+    border-radius: 10px;
+}
+
+#vision-mission{
+    display: flex;
+    flex-direction: column;
+    align-self:flex-end;
+    text-align: right;
+}
+
+#vision p{
+    margin-bottom: 30px;
+}
+
+#message h3{
+    font-size: 32px;
+    margin-bottom: 24px;
+}
+
+#location p {
+    color: #254706;
+}
+
+#location{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #E4F6C9;
+    padding-top: 50px;
+}
+
+#loc-content {
+    display: flex;
+    align-items: center;
+}
+
+#loc-content .bamboo{
+    width: 200px;
+    height: 320px;
+}
+
+#loc-image-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.loc-image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px 70px;
+}
+
+.loc-image img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.loc-image p{
+    margin: 20px 0px 28px 0px;
+}
+
+ #message {
+    background-color: #CEE7AB;
+    padding: 50px;
+} 
+
+#message-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+}
+
+#message-content h4 {
+    color: #193102;
+}
+
+
+form {
+    display: flex;
+}
+
+#form-label{
+    margin-right: 10px;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+#form-label label {
+    margin-bottom: 20px;
+    color: #193102;
+    font-weight: bold;
+}
+
+#form-element{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+}
+
+#form-element input, textarea {
+    padding: 5px;
+    color: #193102;
+}
+
+#form-element input, #radio-input, textarea, button {
+    margin-bottom: 12px;
+    border: none;
+    border-radius: 5px;
+
+}
+
+textarea {
+    resize: none;
+}
+
+#radio-input input {
+    margin: 0px;
+}
+
+#form-element ::placeholder, #cal-input, #radio-input label, button{
+    color: #193102;
+}
+
+button {
+    width: 94px;
+    color: white;
+    background-color: #254706;
+    padding: 10px;
+    border: none;
+    margin-bottom: 0px;
+    font-weight: bold;
+}
+
+#button-holder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#show-message {
+    background-color: white;
+    width: 570px;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+#show-message p {
+    color: #193102;
+}
+
+#time-message{
+    margin-bottom: 30px;
+}
+
+#sender-info-container {
+    margin-right: 10px;
+    width: 180px;
+}
+
+.sender-info {
+    margin-bottom: 20px;
+}
+
+#sender-message {
+    margin-bottom: 20px;
+    display: flex;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    background-color: #254706;
+    padding: 22px 98px;
+}
+
+@media screen and (max-width: 768px){
+    p {
+        font-size: 12px;
+    }
+
+    /* nav {
+        flex-direction: flex-start;
+        justify-content: baseline;
+        align-items: baseline;
+    } */
+
+    .loc-image img {
+        width: 150px;
+        height: 150px;
+    }
+
+    #loc-content {
+        align-items: end;
+        justify-content:end;
+    }
+
+    #loc-content .bamboo {
+        width: 90px;
+        height: 200px;
+    }
+
+    #loc-image-container {
+        margin-top: 10px;
+    }
+
+    #banner {
+        flex-direction: column;
+        height: auto;
+    }
+
+    #form-element {
+        width: 380px;
+    }
+
+    #message-content {
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    h2, h3 {
+        font-size: 24px;
+    }
+
+    #about-company {
+        margin-right: 0;
+    }
+
+    .bamboo{
+        display: none;
+    }
+
+    #vision-mission {
+        text-align: center;
+    }
+
+    #form-element {
+        width: 200px;
+    }
+    
+}

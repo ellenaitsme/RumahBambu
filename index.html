@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Profile - Rumah Bambu</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <script  src="/js/script.js" async></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Bitter:wght@700&family=DM+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=League+Spartan:wght@500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <img src="/asset/logoRevou.png" alt="Logo Revou">
+        <div id="linkContainer">
+            <a href="">Home</a>
+            <a href="index.html">Our Profile</a>
+            <a href="">Portfolio</a>
+            <a href="">Message Us</a>
+        </div>
+    </nav>
+
+    <div id="banner">
+        <div id="about-company">
+            <h2>Hi <span id="username-user">Name</span>, Welcome to</h2>
+            <h2>RUMAH BAMBU</h2>
+            <p>Step into Rumah Bambu, where Indonesian cuisine meets local flair. Our chefs add an extraordinary touch to every dish, creating an unforgettable dining experience. The bamboo-themed interior reflects Indonesia's cultural richness, making your time at Rumah Bambu truly special. Join us for an extraordinary culinary adventure!</p>
+        </div>
+        <div id="vision-mission">
+            <div id="vision">
+                <h2>VISION</h2>
+                <p>Rumah Bambu aims to be the pinnacle of Indonesian culinary excellence, blending local flavors with extraordinary craftsmanship for an unmatched dining experience.</p>
+            </div>
+    
+            <div id="mission">
+                <h2>MISSION</h2>
+                <p>We passionately craft exceptional Indonesian cuisine, led by local chefs pushing flavor boundaries, in a culturally immersive bamboo-themed setting, exceeding expectations to create lasting memories for our guests.</p>
+            </div>
+        </div>
+        
+    </div>
+
+    <div id="location">
+        <h3>OUR HEADQUARTER</h3>
+        <div id="loc-content">
+            <img src="/asset/bamboo1.png" alt="" class="bamboo">
+            <div id="loc-image-container">
+                <div class="loc-image">
+                    <img src="/asset/loc-jakarta.png" alt="Jakarta">
+                    <p>Jakarta</p>
+                </div>
+    
+                <div class="loc-image">
+                    <img src="/asset/loc-bandung.png" alt="Bandung">
+                    <p>Bandung</p>
+                </div>
+    
+                <div class="loc-image">
+                    <img src="/asset/loc-surabaya.jpg" alt="Surabaya">
+                    <p>Surabaya</p>
+                </div>
+            </div>
+            <img src="/asset/bamboo2.png" alt="" class="bamboo">
+        </div>
+    </div>
+
+    <div id="message">
+        <h3>MESSAGE US</h3>
+        <div id="message-content">
+            <div id="form-content">
+                <form action="">
+
+                    <div id="form-label">
+                        <label for="">Name</label>
+                        <label for="">Date of Birth</label>
+                        <label for="">Gender</label>
+                        <label for="">Message</label>
+                    </div>
+                    
+                    <div id="form-element">
+                        <input type="text" placeholder="Name" id="name-input">
+                        <input  type="datetime-local" id="cal-input">
+                        <div id="radio-input">
+                            
+                                <input type="radio" id="male" name="gender" value="Male">
+                                <label for="male">Male</label>
+                            
+                            
+                                <input type="radio" id = "female" name="gender" value="Female">
+                                <label for="female">Female</label>
+                            
+                        </div>
+                        <textarea placeholder="Pesan" name="messages" id="message-input" cols="30" rows="10"></textarea> 
+                        <div id="button-holder">
+                            <button onclick="validateForm(event)">Submit</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <div id="show-message">
+                <div id="time-message">
+                    <h4>Current Time</h4>
+                    <p id="current-time">-</p>
+                </div>
+
+                <div id="sender-message">
+                    <div id="sender-info-container">
+                        <div class="sender-info">
+                            <h4>Name</h4>
+                            <p id="sender-name">-</p>
+                        </div>
+                        <div  class="sender-info">
+                            <h4>Date of Birth</h4>
+                            <p id="sender-dob">-</p>
+                        </div>
+                        <div  class="sender-info">
+                            <h4>Gender</h4>
+                            <p id="sender-gender">-</p>
+                        </div>
+                    </div>
+
+                    <div id="sender-message-text">
+                        <h4>Message</h4>
+                        <p id="sender-message-view">-</p>
+                    </div>
+                    
+                </div>
+                
+    
+            </div>
+        </div>
+        
+    </div>
+    <footer>
+        <p>&copy Anastashia Ellena</p>
+    </footer>
+   
+</body>
+</html>
