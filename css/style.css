@@ -37,7 +37,7 @@ nav a {
 }
 
 #banner{
-    background-image: url("/asset/companyBanner.png");
+    background-image: url("asset/companyBanner.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
